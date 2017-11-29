@@ -1,0 +1,11 @@
+{
+    "mairie": [
+        {
+            "id": 1,
+            "title": "MaMairie",
+            "content": "spitch de maire",
+            "adresse": "1 Grande rue 00000 MaVille",
+            "logo": ""
+        }
+    ]
+}

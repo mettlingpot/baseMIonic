@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Evenements</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding  >
+    <ion-list >
+        <button ion-button clear *ngFor="let evenement of tabEvenements"(click)="itemTapped(evenement)">
+            <ion-item>
+                <ion-thumbnail item-start>
+                    <img src="{{ evenement.photoUrl }}"/>
+                </ion-thumbnail>
+                    <h2>{{ evenement.title }}</h2>
+                    <p>{{ evenement.date }}</p>
+            </ion-item>
+        </button>
+    </ion-list>
+    <div id="margePub"></div>
+</ion-content>
+    <ion-row #pub id="pub">
+      <button id="pubButton" ion-button full>publicite 3</button>
+    </ion-row>>

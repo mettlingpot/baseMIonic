@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Partenaires</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding  > 
+    <ion-list>
+      <button ion-item *ngFor="let annonceur of tabAnnonceurs" (click)="itemTapped(annonceur)">
+        <!--<ion-icon [name]="item.icon" item-start></ion-icon>-->
+        <ion-thumbnail item-start>
+          <img src="{{ annonceur.photoUrl }}"/>
+        </ion-thumbnail>
+        {{ annonceur.title }}
+        <div class="item-note" item-end>
+        <!--{{ annonceur.content }}-->
+        </div>
+      </button>
+    </ion-list>
+</ion-content>

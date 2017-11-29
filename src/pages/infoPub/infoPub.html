@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{annonceur.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding  > 
+    <img src="{{ annonceur.photoUrl }}"/>
+    <b>{{annonceur.title}}</b>
+    <b>{{annonceur.content}}</b>
+    <a href="{{annonceur.siteWeb}}"><b>site web</b></a>
+</ion-content>

@@ -1,5 +1,19 @@
 // http://ionicframework.com/docs/theming/
+    #pub{
+        position:fixed; 
+        bottom:3px;
+        width: 100%;
+        z-index: 2;
+        opacity: 0.7;
+    }
 
+    #pubButton{
+        height: 100px;
+    }
+
+    #margePub{
+        margin-bottom: 100px;
+    }
 
 // App Global Sass
 // --------------------------------------------------

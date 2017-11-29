@@ -1,0 +1,51 @@
+{
+    "annonceurs": [
+        {
+            "id": 1,
+            "title": "annonceur 1",
+            "content": "test annonceur",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "siteWeb": "http://exemplesite.fr"
+        },
+        {
+            "id": 2,
+            "title": "annonceur 2",
+            "content": "test article",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "siteWeb": "http://exemplesite.fr",
+            "LatLng": "44.397554,4.882565999999997"
+        },
+        {
+            "id": 3,
+            "title": "annonceur 3",
+            "content": "test article",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "siteWeb": "http://exemplesite.fr",
+            "LatLng": "44.397554,4.9"
+        },
+        {
+            "id": 4,
+            "title": "annonceur 4",
+            "content": "test article",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "siteWeb": "http://exemplesite.fr",
+            "LatLng": "44.397554,4.7"
+        },
+        {
+            "id": 5,
+            "title": "annonceur 5",
+            "content": "test article",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "siteWeb": "http://exemplesite.fr",
+            "LatLng": "44.397554,5"
+        },
+        {
+            "id": 6,
+            "title": "annonceur 6",
+            "content": "normalement ca marche",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "siteWeb": "http://exemplesite.fr",
+            "LatLng": "44.5,4.882565999999997"
+        }
+    ]
+}

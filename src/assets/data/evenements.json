@@ -1,0 +1,25 @@
+{
+    "evenements": [
+        {
+            "id": 1,
+            "title": "loto de l'école",
+            "content": "l'école organise son loto annuel...",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "date": "01/02/2018"
+        },
+        {
+            "id": 2,
+            "title": "Evénement 2",
+            "content": "contenu de l'événement 2",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "date": "05/06/2018"
+        },
+        {
+            "id": 3,
+            "title": "Evénement 3",
+            "content": "contenu de l'événement 3",
+            "photoUrl": "./assets/imgs/confiote.jpg",
+            "date": "05/09/2018"
+        }
+    ]
+}

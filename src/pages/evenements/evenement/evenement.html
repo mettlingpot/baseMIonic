@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{evenement.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding  > 
+    <img src="{{evenement.photoUrl}}"/>
+    <H1>{{evenement.title}}</H1>
+    <b>{{evenement.date}}</b>
+    <b>{{evenement.content}}</b>
+    <!--<a href="{{annonceur.siteWeb}}"><b>site web</b></a>-->
+    <div id="margePub"></div>
+</ion-content>
+    <ion-row #pub id="pub">
+      <button id="pubButton" ion-button full>publicite 3</button>
+    </ion-row>>

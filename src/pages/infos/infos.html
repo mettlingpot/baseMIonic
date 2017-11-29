@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Infos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding  > 
+    <ion-card *ngFor="let mairie of tabMairie">
+    <ion-card-content>
+      <ion-card-title>
+        {{ mairie.title }}
+        </ion-card-title>
+      <p>{{ mairie.content }}</p>
+      <p>{{ mairie.adresse }}</p>
+    </ion-card-content>
+  </ion-card>
+<div id="margePub"></div>
+</ion-content>
+<ion-row #pub id="pub">
+    <button id="pubButton" ion-button full>publicite 2</button>
+</ion-row>>
