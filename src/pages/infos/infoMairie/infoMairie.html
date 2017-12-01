@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Infos</ion-title>
+    <ion-title>Infos Mairie</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -14,14 +14,20 @@
         {{ mairie.title }}
       </ion-card-title>
       <div *ngFor="let adresse of mairie.adresse">
-          <p>Adresse: {{ adresse.adresse }}</p>
-          <p>{{ adresse.codePostal }}</p>
-          <p>{{ adresse.ville }}</p>
+          <p>{{ adresse.adresse }} {{ adresse.codePostal }} {{ adresse.ville }}</p>
+          <p>Contactez nous:</p>
+          <p><ion-icon name="call" item-start></ion-icon><a href="tel:{{mairie.telephone}}"> {{mairie.telephone}}</a></p>
+          <p><ion-icon name="mail" item-start></ion-icon><a href="mail:{{mairie.mail}}"> {{mairie.mail}}</a></p>
       </div>
     </ion-card-content>
+    <ion-list>
+        <ion-row *ngFor="let horaire of mairie.horaires">
+            <ion-col col-4>{{horaire.jour}}:</ion-col> {{horaire.heure}}
+        </ion-row>
+    </ion-list>
   </ion-card>
 <div id="margePub"></div>
 </ion-content>
 <ion-row #pub id="pub">
-    <button id="pubButton" ion-button full>publicite 2</button>
+      <button id="pubButton" ion-button full *ngFor="let pub of annonceurPub" (click)="itemTapped(pub)">{{pub.title}}</button>
 </ion-row>>

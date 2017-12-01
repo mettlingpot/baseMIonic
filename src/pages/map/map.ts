@@ -32,17 +32,16 @@ var map;
     ionViewDidLoad() {}
 
     showMap(){    
-        for (let mairie of tabMairie){
-            console.log(mairie.title);
-            const location = new google.maps.LatLng(mairie.Lat,mairie.Lng);
+
+            const location = new google.maps.LatLng( "44.397554", "4.882565999999997");
             const options ={
                     center: location,
                     zoom:10
             }
             map = new google.maps.Map(this.mapRef.nativeElement,options);
-            this.addMarkerMairie(new google.maps.LatLng(mairie.Lat,mairie.Lng), map,mairie);
+            this.addMarkerMairie(new google.maps.LatLng( "44.397554", "4.882565999999997"), map);
 
-        }
+
         for (let pub of tabAnnonceurs){
             console.log(pub.title);
             this.addMarkerPartenaire(new google.maps.LatLng(pub.Lat,pub.Lng), map,pub);
@@ -50,16 +49,16 @@ var map;
 
     }
 
-    addMarkerMairie(position,map,mairie){
+    addMarkerMairie(position,map){
     
-        var contentString = '<div id="'+mairie.id+'">'+
+        var contentString = '<div id="+mairie.id+">'+
             '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">'+mairie.title+'</h1>'+
+            '</div>'+'<img src="./assets/imgs/mairie.jpg"></img>'+
+            '<h1 id="firstHeading" class="firstHeading">MaVille</h1>'+
             '<div id="bodyContent">'+
-            '<p><b>'+mairie.title+', </b>'+mairie.content+'</p>'+
-            '<p><a href="'+mairie.siteWeb+'">'+
-            ''+mairie.siteWeb+'</a> '+'</p>'+
+            '<p><b>MaVille, </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>'+
+            '<p><a href="http://www.maville.fr">'+
+            'http://www.maville.fr</a> '+'</p>'+
             '</div>'+
             '</div>';
         var infoWindow = new google.maps.InfoWindow({
@@ -69,8 +68,8 @@ var map;
         var marker = new google.maps.Marker({
             position,
             map,
-            title: mairie.title,
-            label: mairie.title,
+            title: "title",
+            label: "maVille",
         })
         //click de l'infowindow
         marker.addListener('click',function(){ infoWindow.open(map,marker)});

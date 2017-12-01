@@ -45,5 +45,5 @@
 <div id="margePub"></div>
 </ion-content>
 <ion-row #pub id="pub">
-    <button id="pubButton" ion-button full>publicite 2</button>
+      <button id="pubButton" ion-button full *ngFor="let pub of annonceurPub" (click)="itemTapped(pub)">{{pub.title}}</button>
 </ion-row>>

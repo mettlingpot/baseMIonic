@@ -11,11 +11,15 @@ import { InfoPubPage } from '../../pages/infoPub/infoPub';
 export class PartenairePage {
 
 tabAnnonceurs = new Array;
+annonceurPub = new Array;
+
   constructor(public navCtrl: NavController, private annonceur: AnnonceurService) {
 
     this.annonceur.getData("annonceurs").subscribe((data) => {
         this.tabAnnonceurs = data;
-    });
+        this.annonceurPub[0] = this.tabAnnonceurs[2];
+        console.log(this.annonceurPub);
+    });        
   }
     itemTapped(item) {
       this.navCtrl.push(InfoPubPage, {

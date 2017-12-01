@@ -7,21 +7,46 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content > 
-    <ion-card *ngFor="let mairie of tabMairie">
+<ion-content *ngFor="let mairie of tabMairie"> 
+    <ion-card >
     <ion-card-content>
       <ion-card-title>
         {{ mairie.title }}
       </ion-card-title>
-      <div *ngFor="let adresse of mairie.adresse">
-          <p>Adresse: {{ adresse.adresse }}</p>
-          <p>{{ adresse.codePostal }}</p>
-          <p>{{ adresse.ville }}</p>
+        <ion-list>
+            <ion-row *ngFor="let numero of mairie.numerosUtiles">
+                <ion-col col-6>{{numero.service}}:</ion-col> <ion-col><a href="tel:{{numero.numero}}"> {{numero.numero}}</a></ion-col>
+            </ion-row>
+        </ion-list>
+    </ion-card-content>
+  </ion-card>
+  <ion-card >
+    <ion-card-content *ngFor="let defibrilateur of mairie.defibrilateur">
+      <ion-row >
+          <ion-col col-6>{{defibrilateur.content}}:</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let adresseDefibrilateur of defibrilateur.adresseDefibrilateur">
+          <p>{{ adresseDefibrilateur.adresse }} {{ adresseDefibrilateur.codePostal }} {{ adresseDefibrilateur.ville }}</p>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content *ngFor="let decheterie of mairie.decheterie">
+      <ion-card-title>
+        {{ decheterie.nom }}
+      </ion-card-title>
+      <div *ngFor="let adresse of decheterie.adresse">
+          <p>{{ adresse.adresse }} {{ adresse.codePostal }} {{ adresse.ville }}</p>
       </div>
+        <ion-list>
+            <ion-row *ngFor="let horaire of decheterie.horaireDecheterie">
+                <ion-col col-4>{{horaire.jour}}:</ion-col><ion-col> {{horaire.heure}}</ion-col>
+            </ion-row>
+        </ion-list>
     </ion-card-content>
   </ion-card>
 <div id="margePub"></div>
 </ion-content>
 <ion-row #pub id="pub">
-    <button id="pubButton" ion-button full>publicite 2</button>
+      <button id="pubButton" ion-button full *ngFor="let pub of annonceurPub" (click)="itemTapped(pub)">{{pub.title}}</button>
 </ion-row>>

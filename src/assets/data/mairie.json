@@ -11,6 +11,7 @@
                                 "ville": "MaVille"
                             }
                         ],
+            "mail": "mairie@maVille.fr",
             "siteWeb": "http://www.maville.fr",
             "telephone": "000000000",
             "logo": "./assets/imgs/mairie.jpg",
@@ -51,7 +52,124 @@
                                 "nom": "conseil7",
                                 "photo": "./assets/imgs/visage.jpg"
                             }
-                        ]
+                        ],
+            "horaires": [ 
+                            {
+                                "jour": "lundi",
+                                "heure": "9h-12h - 13h30-18h"
+                            },
+                             {
+                                "jour": "mardi",
+                                "heure": "9h-12h - 13h30-18h"
+                            },
+                             {
+                                "jour": "mercredi",
+                                "heure": "9h-12h - fermé "
+                            },
+                             {
+                                "jour": "jeudi",
+                                "heure": "9h-12h - 13h30-18h"
+                            },
+                             {
+                                "jour": "vendredi",
+                                "heure": "9h-12h - 13h30-18h"
+                            },
+                             {
+                                "jour": "samedi",
+                                "heure": "9h-12h - fermé "
+                            },
+                             {
+                                "jour": "dimanche",
+                                "heure": "fermé"
+                            }
+                ],
+                "decheterie":[
+                             {
+                                "nom": "Decheterie de MaVille",
+                                "adresse": [ 
+                                                {
+                                                    "adresse":"1 Grande rue",
+                                                    "codePostal": "00000",
+                                                    "ville": "MaVille"
+                                                }
+                                            ],
+                                "horaireDecheterie": [ 
+                                                {
+                                                    "jour": "lundi",
+                                                    "heure": "9h-12h - 13h30-18h"
+                                                },
+                                                {
+                                                    "jour": "mardi",
+                                                    "heure": "9h-12h - 13h30-18h"
+                                                },
+                                                {
+                                                    "jour": "mercredi",
+                                                    "heure": "9h-12h - fermé "
+                                                },
+                                                {
+                                                    "jour": "jeudi",
+                                                    "heure": "9h-12h - 13h30-18h"
+                                                },
+                                                {
+                                                    "jour": "vendredi",
+                                                    "heure": "9h-12h - 13h30-18h"
+                                                },
+                                                {
+                                                    "jour": "samedi",
+                                                    "heure": "9h-12h - fermé "
+                                                },
+                                                {
+                                                    "jour": "dimanche",
+                                                    "heure": "fermé"
+                                                }
+                                    ]
+                                }
+            ],
+            "numerosUtiles": [ 
+                            {
+                                "service": "Urgences en Europe",
+                                "numero": "112"
+                            },
+                            {
+                                "service": "Gendarmerie",
+                                "numero": "17",                               
+                                "numero1": "0000000000 (MaVille)"
+                            },
+                            {
+                                "service": "Pompiers",
+                                "numero": "18"
+                            },
+                            {
+                                "service": "SAMU",
+                                "numero": "15"
+                            },
+                            {
+                                "service": "Pharmacie de Garde",
+                                "numero": "0000000000"
+                            },
+                            {
+                                "service": "Medecin de garde",
+                                "numero": "15",
+                                "numero1": "0000000000 (MaVille)"
+                            },
+                            {
+                                "service": "Enfance maltraitée",
+                                "numero": "119"
+                            }
+                ],
+                "defibrilateur":[
+                            {
+                                "content":"Un defibrilateur est disponible à: ",
+                                "adresseDefibrilateur": [ 
+                                    {
+                                        "adresse":"1 Grande rue",
+                                        "codePostal": "00000",
+                                        "ville": "MaVille"
+                                    }
+                                ]
+
+                            }
+                ]
         }
     ]
 }
