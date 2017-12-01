@@ -7,16 +7,41 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding  > 
+<ion-content > 
     <ion-card *ngFor="let mairie of tabMairie">
     <ion-card-content>
+        <img src="{{ mairie.logo }}"/>
       <ion-card-title>
         {{ mairie.title }}
-        </ion-card-title>
+      </ion-card-title>
       <p>{{ mairie.content }}</p>
-      <p>{{ mairie.adresse }}</p>
+      <!--<div *ngFor="let adresse of mairie.adresse">
+          <p>Adresse: {{ adresse.adresse }}</p>
+          <p>{{ adresse.codePostal }}</p>
+          <p>{{ adresse.ville }}</p>
+      </div>-->
     </ion-card-content>
   </ion-card>
+    <ion-list>
+        <ion-card>
+                <button (click)="goInfoMairie(tabMairie)" ion-item>
+                <ion-icon name="information-circle" item-start></ion-icon>
+                    La Mairie
+                </button>
+        </ion-card>
+        <ion-card>
+                <button (click)="goEquipe(tabMairie)"  ion-item>
+                <ion-icon name="body" item-start></ion-icon>
+                    Equipe Municipale
+                </button>
+        </ion-card>
+        <ion-card>
+                <button (click)="goNumeros(tabMairie)"  ion-item>
+                <ion-icon name="call" item-start></ion-icon>
+                    Numeros et infos Utiles
+                </button>
+        </ion-card>
+    </ion-list>
 <div id="margePub"></div>
 </ion-content>
 <ion-row #pub id="pub">

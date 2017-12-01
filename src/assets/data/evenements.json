@@ -4,22 +4,52 @@
             "id": 1,
             "title": "loto de l'école",
             "content": "l'école organise son loto annuel...",
-            "photoUrl": "./assets/imgs/confiote.jpg",
-            "date": "01/02/2018"
+            "photoUrl": "./assets/imgs/loto.jpg",
+            "date": "01/02/2018",
+            "Lat": "44.3",
+            "Lng": "4.8",
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0603748577"        
         },
         {
             "id": 2,
-            "title": "Evénement 2",
+            "title": "Fête du village",
             "content": "contenu de l'événement 2",
-            "photoUrl": "./assets/imgs/confiote.jpg",
-            "date": "05/06/2018"
-        },
-        {
+            "photoUrl": "./assets/imgs/fete.jpg",
+            "date": "05/06/2018",
+            "Lat": "44.3",
+            "Lng": "4.8",
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0000000000"        
+        },        {
             "id": 3,
             "title": "Evénement 3",
             "content": "contenu de l'événement 3",
-            "photoUrl": "./assets/imgs/confiote.jpg",
-            "date": "05/09/2018"
+            "photoUrl": "./assets/imgs/evenement.jpg",
+            "date": "05/09/2018",
+            "Lat": "44.3",
+            "Lng": "4.8",
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0000000000"        
+        
         }
     ]
 }

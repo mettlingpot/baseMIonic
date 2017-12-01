@@ -11,6 +11,11 @@ import { EvenementsPage } from '../pages/evenements/evenements';
 import { MapPage } from '../pages/map/map';
 
 import { EvenementPage } from '../pages/evenements/evenement/evenement';
+import { InfoMairiePage } from '../pages/infos/infoMairie/infoMairie';
+import { NumerosPage } from '../pages/infos/numeros/numeros';
+import { EquipePage } from '../pages/infos/equipe/equipe';
+
+
 
 // services
 import { AnnonceurService } from '../services/annonceurs.service';
@@ -32,7 +37,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EvenementsPage,
     EvenementPage,
     MapPage,
-    InfoPubPage
+    InfoMairiePage,
+    InfoPubPage,
+    EquipePage,
+    NumerosPage
   ],
   imports: [
     HttpModule,
@@ -48,7 +56,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     EvenementsPage,
     EvenementPage,
     MapPage,
-    InfoPubPage
+    InfoMairiePage,
+    InfoPubPage,
+    EquipePage,
+    NumerosPage
   ],
   providers: [
     HttpModule,

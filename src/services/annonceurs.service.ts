@@ -15,4 +15,14 @@ getData(recherche) {
         .map((res:Response) => res.json().annonceurs);
         
   }
+  
+  getTabAnnonceur(): any {
+        this.getData("annonceurs").subscribe((data) => {
+            var tabAnnonceurs = new Array;
+            tabAnnonceurs = data;              
+            //console.log(tabAnnonceurs);
+            return tabAnnonceurs;
+        });
+
+  }
 }

@@ -3,49 +3,104 @@
         {
             "id": 1,
             "title": "annonceur 1",
-            "content": "test annonceur",
-            "photoUrl": "./assets/imgs/confiote.jpg",
-            "siteWeb": "http://exemplesite.fr"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse ...",
+            "photoUrl": "./assets/imgs/annonceur1.jpg",
+            "siteWeb": "http://exemplesite.fr",
+            "Lat": "44.3",
+            "Lng": "4.8",
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0603748577"        
         },
         {
             "id": 2,
             "title": "annonceur 2",
-            "content": "test article",
-            "photoUrl": "./assets/imgs/confiote.jpg",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse ...",
+            "photoUrl": "./assets/imgs/annonceur2.jpg",
             "siteWeb": "http://exemplesite.fr",
-            "LatLng": "44.397554,4.882565999999997"
+            "Lat": "44.4",
+            "Lng": "4.7",
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0000000000"        
         },
         {
             "id": 3,
             "title": "annonceur 3",
-            "content": "test article",
-            "photoUrl": "./assets/imgs/confiote.jpg",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse ...",
+            "photoUrl": "./assets/imgs/annonceur3.jpg",
             "siteWeb": "http://exemplesite.fr",
-            "LatLng": "44.397554,4.9"
+            "Lat": "44.5",
+            "Lng": "4.9",        
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0000000000"        
         },
         {
             "id": 4,
             "title": "annonceur 4",
-            "content": "test article",
-            "photoUrl": "./assets/imgs/confiote.jpg",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse ...",
+            "photoUrl": "./assets/imgs/annonceur4.jpg",
             "siteWeb": "http://exemplesite.fr",
-            "LatLng": "44.397554,4.7"
+            "Lat": "44.6",
+            "Lng": "5",
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0000000000"        
         },
         {
             "id": 5,
             "title": "annonceur 5",
-            "content": "test article",
-            "photoUrl": "./assets/imgs/confiote.jpg",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse ...",
+            "photoUrl": "./assets/imgs/annonceur5.jpg",
             "siteWeb": "http://exemplesite.fr",
-            "LatLng": "44.397554,5"
+            "Lat": "44.7",
+            "Lng": "5.1",
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0000000000"           
         },
         {
             "id": 6,
             "title": "annonceur 6",
-            "content": "normalement ca marche",
-            "photoUrl": "./assets/imgs/confiote.jpg",
-            "siteWeb": "http://exemplesite.fr",
-            "LatLng": "44.5,4.882565999999997"
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse ...",
+            "photoUrl": "./assets/imgs/annonceur6.jpg",
+            "siteWeb": "http://www.google.fr",
+            "Lat": "44.5",
+            "Lng": "4.7",
+            "adresse": [ 
+                            {
+                                "adresse":"1 Grande rue",
+                                "codePostal": "00000",
+                                "ville": "MaVille"
+                            }
+                        ],
+            "telephone": "0000000000"    
         }
     ]
 }

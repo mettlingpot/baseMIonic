@@ -9,7 +9,13 @@
 
 <ion-content padding  > 
     <img src="{{ annonceur.photoUrl }}"/>
-    <b>{{annonceur.title}}</b>
+    <H1>{{annonceur.title}}</H1>
     <b>{{annonceur.content}}</b>
-    <a href="{{annonceur.siteWeb}}"><b>site web</b></a>
+    <div *ngFor="let adresse of annonceur.adresse">
+            <p>{{ adresse.adresse }}
+            {{ adresse.codePostal }}
+            {{ adresse.ville }}</p>
+    </div>
+    <p><ion-icon name="call" item-start></ion-icon><a href="tel:{{annonceur.telephone}}"> {{annonceur.telephone}}</a></p>
+    <p><a href="{{annonceur.siteWeb}}">site web</a></p>
 </ion-content>

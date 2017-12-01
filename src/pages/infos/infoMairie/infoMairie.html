@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Infos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content > 
+    <ion-card *ngFor="let mairie of tabMairie">
+    <ion-card-content>
+      <ion-card-title>
+        {{ mairie.title }}
+      </ion-card-title>
+      <div *ngFor="let adresse of mairie.adresse">
+          <p>Adresse: {{ adresse.adresse }}</p>
+          <p>{{ adresse.codePostal }}</p>
+          <p>{{ adresse.ville }}</p>
+      </div>
+    </ion-card-content>
+  </ion-card>
+<div id="margePub"></div>
+</ion-content>
+<ion-row #pub id="pub">
+    <button id="pubButton" ion-button full>publicite 2</button>
+</ion-row>>

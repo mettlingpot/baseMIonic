@@ -3,7 +3,6 @@ import { NavController } from 'ionic-angular';
 
 import { AnnonceurService } from '../../services/annonceurs.service';
 import { InfoPubPage } from '../../pages/infoPub/infoPub';
-var json = "annonceurs";
 
 @Component({
   selector: 'page-partenaire',
